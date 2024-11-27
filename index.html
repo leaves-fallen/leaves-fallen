@@ -69,7 +69,7 @@
 			FangQi<span class="STYLE1"> 与</span> ShuMin<span class="STYLE1"> 宣誓在一起已经</span>
 			<div id="wedding-clock"></div>
 		</div>
-    <canvas id="canvas" width="1100" height="680"></canvas>
+    <canvas id="canvas" width="1100" height="780"></canvas>
   </div>
 
 </div>
@@ -97,11 +97,11 @@
         scale: 2
       },
       branch: [
-        [535, 680, 570, 250, 500, 200, 30, 100, [
+        [535, 780, 570, 250, 500, 200, 30, 100, [
           [540, 500, 455, 417, 340, 400, 13, 100, [
             [450, 435, 434, 430, 394, 395, 2, 40]
           ]],
-          [550, 445, 600, 356, 680, 345, 12, 100, [
+          [550, 445, 600, 356, 780, 345, 12, 100, [
             [578, 400, 648, 409, 661, 426, 3, 80]
           ]],
           [539, 281, 537, 248, 534, 217, 3, 40],
@@ -181,13 +181,13 @@
     }));
 
     var moveAnimate = eval(Jscex.compile("async", function () {
-      tree.snapshot("p1", 240, 0, 610, 680);
+      tree.snapshot("p1", 240, 0, 610, 780);
       while (tree.move("p1", 500, 0)) {
         foot.draw();
         $await(Jscex.Async.sleep(10));
       }
       foot.draw();
-      tree.snapshot("p2", 500, 0, 610, 680);
+      tree.snapshot("p2", 500, 0, 610, 780);
 
       // 会有闪烁不得意这样做, (＞﹏＜)
       canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
